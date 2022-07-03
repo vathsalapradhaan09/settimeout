@@ -1,0 +1,50 @@
+createPost(){
+return new promise(()=>{
+})
+}
+updateprofilephoto(){
+return new promise(()=>{
+})
+}
+const user={
+username:'yash',
+lastactivitytime:'11th of jan'
+}
+updatelastactivitytime={=
+}
+userlastactivitytime={=
+}
+userupdatesapost(){
+promise.all([createPost,updatelastactivitytime]).them(([createPostresolves,updatelastactivitytimeresolves])=>{
+console.log(updatelastactivitytimeresolves)})
+.catch(err=>console.log(err))
+}
+}
+function createPost(post){
+return new Promise((resolve,reject)=>{
+setTimeout(()=>{
+posts.push(post);
+const error=true;
+if(!error){
+resolve();
+}
+else{
+reject('Error:Something went wrong');
+}
+},2000);
+});
+}
+createPost({title:'Post Three',body:'This is post three'})
+.then(getPosts)
+.cath(err=>console.log(err));
+//promise.all
+const promise1=promise.resolve('Hello World');
+const promise2=10;
+const promise3=new promise((resolve,reject)=>setTimeout(resolve,2000,'Goodbye')
+);
+Promise.all([promise1,promise2,promise3]).then(values=>
+console.log(values));
+);
+Callbacks are functions passed as arguments into other functions to make sure mandatory variables are available within the callback-function's scope
+Promises are placeholder objects for data that's available in the future. As soon as their state changes from pending to resolved, .then() method can be called to make the data available for subsequent operations.
+Async / await is syntactic sugar over promises. Instead of using .then(), you can assign data that's resolved by a promise to a variable available within an async function() scope
